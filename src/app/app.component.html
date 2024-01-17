@@ -1,0 +1,11 @@
+<div class="gauge">
+  <span>Using a strain gauge to determine body weight</span>
+  <input type="number" (input)="onInputChange($event)">
+  <span *ngIf="weight != null">{{weight}}</span>        
+</div>
+
+<div class="temperature">
+  <span>Using a thermistor for temperature measurement</span>
+  <input type="number" (input)="onInputVoltageChange($event)">
+  <span *ngIf="temperature != null">{{temperature}}</span>        
+</div>
